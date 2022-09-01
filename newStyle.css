@@ -1,0 +1,122 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#324b22;
+    --secondary-color:#376940;
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+}
+.header{
+    padding: 0;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+    color: #eee;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inner-header{
+    padding: 5px;
+    margin: 10px;
+}
+#search{
+   border: var(--primary-color);
+   border-radius: 0.5rem;
+   padding: 0.3rem;
+   background-color: rgb(168, 226, 43);
+   color: #fff;
+   font-size: 1rem;
+   height: 3rem;
+   margin: 1rem;
+}
+.search:focus{
+    outline: 0;
+    background-color: var(--primary-color);
+}
+.search::placeholder{
+    color: wheat;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.superhero{
+    width: 305px;
+    margin: 0.5rem;
+    border-radius: 0..5px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color:wheat;
+    position: relative;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+}
+#superHeroinfo{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background-color: rgb(126, 89, 20);
+    transform: translateY(150%);
+    transition: trasform 0.6s ease-in;
+}
+.superhero:hover .details{
+    transform: translateY(0);
+}
+#D1 {
+    display: flex;
+    justify-content: space-between;
+}
+#D2 {
+    display: flex;
+    justify-content: space-between;
+}
+#D3 {
+    display: flex;
+    justify-content: space-between;
+}
+.attribute-container{
+    width: 50%;
+    margin: 3px 5px;
+    height: 70%;
+    background-color: rgb(14, 250, 250);
+    border-radius: 0.4rem;
+}
+.attributes {
+    margin: 5px;
+    display: flex;
+}
+.inner-attribute{
+    color: rgb(46, 4, 4);
+    display: inline;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
